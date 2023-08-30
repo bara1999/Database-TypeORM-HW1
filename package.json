@@ -1,0 +1,35 @@
+{
+  "name": "database-typeorm-hw1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-tsc": "tsc -w",
+    "run-watch": "nodemon ./dist",
+    "dev": "concurrently \"npm run build-tsc\"  \"npm run run-watch\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bara1999/Database-TypeORM-HW1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bara1999/Database-TypeORM-HW1/issues"
+  },
+  "homepage": "https://github.com/bara1999/Database-TypeORM-HW1#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.5.7",
+    "concurrently": "^8.2.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.17"
+  }
+}
