@@ -1,3 +1,4 @@
+import './config.js';
 import express from 'express';
 import userRouter from './routers/user.js'
 import "reflect-metadata";

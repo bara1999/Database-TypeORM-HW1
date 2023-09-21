@@ -1,10 +1,10 @@
 import express from "express";
-namespace Users{
+namespace Profile{
     export interface Item{
     id: string,
-    name: string,
-    password: string
-    email: string
+    firstName: string,
+    lastName: string,
+    dateOfBirth: Date
 
     }
     export interface Request extends express.Request {
@@ -17,4 +17,4 @@ namespace Users{
          
 }
 
-export default Users;
+export default Profile;

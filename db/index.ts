@@ -1,5 +1,8 @@
 import { DataSource, Db } from "typeorm"
 import { User } from "./entity/user.js"
+import { Profile } from "./entity/Profile.js"
+import { Role } from "./entity/Role.js"
+import { Permission } from "./entity/Permission.js"
 
 const db = new DataSource({
     type: "mysql",
@@ -8,7 +11,7 @@ const db = new DataSource({
     username: "root",
     password: "",
     database: "gsg_user",
-    entities: [User],
+    entities: [User,Profile,Role,Permission],
     synchronize: true,
     
 })
